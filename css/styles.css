@@ -562,7 +562,7 @@ p {
 }
 
 
-.j {
+.partners-card-icon {
   display: flex;
   width: 106px;
   height: 60px;
@@ -570,9 +570,14 @@ p {
   margin-right: 32px;
   margin-top: 16px;
   margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
   background-color: tomato;
 }
 
+.partners-card-icon:hover {
+  fill: var(--accent-color;
+}
 
 
 
