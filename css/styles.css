@@ -572,11 +572,10 @@ p {
   margin-bottom: 16px;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
 }
 
 .partners-card-icon:hover {
-  fill: var(--accent-color;
+  fill: var(--accent-color);
 }
 
 
