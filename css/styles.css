@@ -97,6 +97,7 @@ p {
 
   .social-contact .contact {
     color: var(--primary-text-color);
+    background-color: tomato;
     fill: var(--primary-text-color);
     display: flex;
     font-style: normal;
@@ -109,12 +110,18 @@ p {
   .social-contact .contact:hover,
   .social-contact .contact:focus {
     color: var(--accent-color);
+    background-color: yellow;
     fill: var(--accent-color);
   }
 
   .item-icon {
-    margin-left: 10px;
+    margin-right: 10px;
   }
+
+ /* .item-icon:hover {
+    background-color: yellow;
+    fill: var(--accent-color);
+  }*/
 
   /*навигация*/
   .site-nav {
@@ -525,10 +532,10 @@ p {
   display: flex;
   width: 106px;
   height: 60px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 
   justify-content: center;
   align-items: center;
@@ -540,7 +547,13 @@ p {
 
 .partners-icon:hover {
   fill: var(--accent-color);
-}*/
+}
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+*/
 
 .net {
   display: flex;
