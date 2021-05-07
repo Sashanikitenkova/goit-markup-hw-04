@@ -97,6 +97,7 @@ p {
 
   .social-contact .contact {
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
     display: flex;
     font-style: normal;
     Font-size: 14px;
@@ -108,6 +109,11 @@ p {
   .social-contact .contact:hover,
   .social-contact .contact:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+
+  .item-icon {
+    margin-left: 10px;
   }
 
   /*навигация*/
@@ -519,10 +525,10 @@ p {
   display: flex;
   width: 106px;
   height: 60px;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   justify-content: center;
   align-items: center;
