@@ -519,6 +519,7 @@ p {
 }
 
 .net-card {
+  display: flex;
   width: 44px;
   height: 44px;
   background-color: turquoise;
@@ -526,6 +527,8 @@ p {
 
   margin-right: 10px;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 } 
 
 .net-card:last-child {
@@ -552,8 +555,12 @@ p {
 }
 
 .net-card.foot {
-  margin-bottom: 0;
+  display: flex;
   background-color: rgba(255, 255, 255, 0.1);
+
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .net-card.foot:hover,
@@ -582,8 +589,16 @@ p {
   fill: var(--accent-color);
 }
 
+.card-foot {
+  fill: var(--white-color);
+}
 
+.net-card-link {
+  fill: #afb1b8;
+}
 
+.net-card-link:hover {
+  fill: var(--white-color);
 
 
 
