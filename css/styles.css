@@ -49,6 +49,9 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;   
+
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 p {
@@ -67,9 +70,11 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
+  /*
   padding-bottom: 32px;
-  padding-top: 32px;
+  padding-top: 32px;*/
 }
+
 .border {
   border-width: 0px 0px 1px 0px;
   border-style: solid;
@@ -85,6 +90,11 @@ p {
   align-items: center;
 }
 
+.nav.padding {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
 /*контакты*/
   .social-contact {
     display: flex;
@@ -97,7 +107,6 @@ p {
 
   .social-contact .contact {
     color: var(--primary-text-color);
-    background-color: tomato;
     fill: var(--primary-text-color);
     display: flex;
     font-style: normal;
@@ -110,7 +119,6 @@ p {
   .social-contact .contact:hover,
   .social-contact .contact:focus {
     color: var(--accent-color);
-    background-color: yellow;
     fill: var(--accent-color);
   }
 
@@ -118,10 +126,10 @@ p {
     margin-right: 10px;
   }
 
- /* .item-icon:hover {
-    background-color: yellow;
-    fill: var(--accent-color);
-  }*/
+.contact {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 
   /*навигация*/
   .site-nav {
@@ -151,6 +159,8 @@ p {
     color: var(--accent-color);  
   }
 
+  /*Секция Герой*/
+
   .hero {
     height: 600px;
     max-width: 1600px;
@@ -168,7 +178,6 @@ p {
 
     padding-bottom: 200px;
     padding-top: 200px;
-    margin-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -194,6 +203,7 @@ p {
     letter-spacing: 0.06em;
     cursor: pointer;
     border-radius: 4px;
+    border: 0;
     
     display: flex;
     padding: 10px 32px;
@@ -203,6 +213,17 @@ p {
     margin-right: auto;
   }
 
+  .hero-button:hover,
+  .hero-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Секция Преимущества компании*/
+
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   .advantages-heading {
     display: none;
@@ -214,7 +235,6 @@ p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-
   }
 
   .advantages-title {
@@ -268,6 +288,12 @@ p {
     margin-bottom: 0;
   }
 
+  /*Секция Чем мы занимаемся*/
+
+  .we-doing {
+    padding-bottom:  94px;
+  }
+
   .occupation {
     display: flex;
   }
@@ -281,18 +307,17 @@ p {
     margin-right: 0;
   }
 
-  .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
+  /*Секция Наша команда*/
 
-  .section.team {
+  .team {
     background-color: var(--button-color);
     max-width: 1600px;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   
   .section-title {
@@ -342,6 +367,7 @@ p {
     margin-bottom: 30px;
   }
 
+/*Футер*/
 
    .basement {
     background-color: var(--background-color);
@@ -362,7 +388,6 @@ p {
     color: var(--white-color);
 
     margin-bottom: 9px;
-    margin-top: 20px;
     margin-right: 70px;
    }
 
@@ -395,6 +420,138 @@ p {
     color: var(--white-color);
    }
 
+   .logo-social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo.footer {
+    margin-right: 131px;
+    margin-bottom: 20px;
+  }
+  
+  .net-card.foot {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+  
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .net-card.foot:hover,
+  .net-card.foot:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .card-foot {
+    fill: var(--white-color);
+  }
+
+  .net {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .net-card {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    margin-right: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .net-card:last-child {
+    margin-right: 0;
+  }
+  
+  .net-card:hover,
+  .net-card:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .advantages-title.social {
+    color: var(--white-color);
+    margin-bottom: 0;
+  }
+  
+  .net-card-link {
+    fill: #afb1b8;
+  }
+  
+  .net-card-link:hover,
+  .net-card-link:focus {
+    fill: var(--white-color);
+  }
+
+  /* Кнопки выбора в портфолио */
+
+  .primary-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   }
+
+.primary-button .button {
+  color: var(--title-text-color);
+  background-color: var(--button-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ .primary-button .button:hover,
+ .primary-button .button:focus{
+   color: var(--white-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button.Vs {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.button-card {
+  width: 73px;
+  margin-right: 8px; 
+}   
+
+.button-card.V {
+  width: 128px;
+}
+
+.button-card.P {
+  width: 145px;
+}
+
+.button-card.D {
+  width: 103px;
+}
+
+.button-card.M {
+  width: 130px;
+}
+
+.button-card:last-child {
+  margin-right: 0;
+}
+
+  /* Секция Портфолио */
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
    .portfolio {
     display: flex;
@@ -410,6 +567,10 @@ p {
     border-style: solid;
     border-color: var(--border-portfolio);
    }
+   
+   .portfolio-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
    .portfolio-card:nth-child(3n) {
      margin-right: 0;
@@ -428,37 +589,6 @@ p {
      text-decoration: none;
   }
 
-  .primary-button {
-      display: flex;
-      justify-content: center;
-     }
-
-  .button-card {
-    width: 73px;
-    margin-right: 8px;
-    margin-bottom: 50px; 
-  }   
-
-  .button-card.V {
-    width: 128px;
-  }
-
-  .button-card.P {
-    width: 145px;
-  }
-
-  .button-card.D {
-    width: 103px;
-  }
-
-  .button-card.M {
-    width: 130px;
-  }
-
-  .button-card:last-child {
-    margin-right: 0;
-  }
-    
   .name {
     margin-top: 20px;
     margin-bottom: 4px;
@@ -481,24 +611,6 @@ p {
     margin-right: 24px;
   }
 
-  .primary-button .button {
-     color: var(--title-text-color);
-     background-color: var(--button-color);
-     padding: 6px 22px;
-     border-radius: 4px;
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.63;
-     border-color: var(--button-color);
-     cursor: pointer;
-     font-family: inherit;
- }
-  .primary-button .button:hover,
-  .primary-button .button:focus{
-    color: var(--white-color);
-    background-color: var(--accent-color);
- }
-
  .photo {
   display: block;
  }
@@ -512,7 +624,6 @@ p {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  fill: #afb1b8;
 
   margin-right: 30px; 
   margin-bottom: 94px;
@@ -525,100 +636,22 @@ p {
 .partners-card:hover,
 .partners-card:focus {
   border-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .partners-card-icon {
   display: flex;
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
   margin-left: 32px;
   margin-right: 32px;
   margin-top: 16px;
   margin-bottom: 16px;
-
   justify-content: center;
   align-items: center;
 }
 
-/*.partners-icon {
-  fill: #afb1b8;
-}
-
-.partners-icon:hover {
+.partners-card-icon:hover,
+.partners-card-icon:focus {
   fill: var(--accent-color);
 }
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-*/
-
-.net {
-  display: flex;
-  justify-content: center;
-}
-
-.net-card {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  margin-right: 10px;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-} 
-
-.net-card:last-child {
-  margin-right: 0;
-}
-
-.net-card:hover,
-.net-card:focus {
-  background-color: var(--accent-color);
-}
-
-.advantages-title.social {
-  color: var(--white-color);
-  margin-bottom: 0;
-}
-
-.logo-social {
-  display: flex;
-  align-items: center;
-}
-
-.logo.footer {
-  margin-right: 131px;
-}
-
-.net-card.foot {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  margin-bottom: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.net-card.foot:hover,
-.net-card.foot:focus {
-  background-color: var(--accent-color);
-}
-
-
-.card-foot {
-  fill: var(--white-color);
-}
-
-.net-card-link {
-  fill: #afb1b8;
-}
-
-.net-card-link:hover {
-  fill: var(--white-color);
-}
-
