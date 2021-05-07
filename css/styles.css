@@ -574,7 +574,11 @@ p {
   align-items: center;
 }
 
-.partners-card-icon:hover {
+.partners-icon {
+  fill: #afb1b8;
+}
+
+.partners-icon:hover {
   fill: var(--accent-color);
 }
 
