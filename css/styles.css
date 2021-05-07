@@ -499,6 +499,7 @@ p {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  fill: #afb1b8;
 
   margin-right: 30px; 
   margin-bottom: 94px;
@@ -511,7 +512,29 @@ p {
 .partners-card:hover,
 .partners-card:focus {
   border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
+.partners-card-icon {
+  display: flex;
+  width: 106px;
+  height: 60px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/*.partners-icon {
+  fill: #afb1b8;
+}
+
+.partners-icon:hover {
+  fill: var(--accent-color);
+}*/
 
 .net {
   display: flex;
@@ -568,27 +591,6 @@ p {
 }
 
 
-.partners-card-icon {
-  display: flex;
-  width: 106px;
-  height: 60px;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.partners-icon {
-  fill: #afb1b8;
-}
-
-.partners-icon:hover {
-  fill: var(--accent-color);
-}
-
 .card-foot {
   fill: var(--white-color);
 }
@@ -600,86 +602,4 @@ p {
 .net-card-link:hover {
   fill: var(--white-color);
 }
-
-
-
-
-
-
- /*.envelope {
-   width: 16px;
-   height: 12px;
- }
-
- .smartphone {
-  width: 10px;
-  height: 16px;
-}
-
-.icon-net {
-  width: 44px;
-  height: 44px;
-}
-
-.partners {
-  width: 170px;
-  height: 92px;
-}
-
-<ul class="s"> 
-  <li>
-    <button>
-      <svg class="envelope">
-        <use href="./images/symbol-defs.svg#icon-envelope"></use>
-      </svg>
-
-      <svg class="smartphone">
-        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-      </svg>
-
-      <svg class="partners">
-        <use href="./images/symbol-defs.svg#icon-client"></use>
-      </svg>
-      
-      <svg class="partners">
-        <use href="./images/symbol-defs.svg#icon-client2"></use>
-      </svg>
-
-      <svg class="partners">
-        <use href="./images/symbol-defs.svg#icon-client3"></use>
-      </svg>
-
-      <svg class="partners">
-        <use href="./images/symbol-defs.svg#icon-client4"></use>
-      </svg>
-
-      <svg class="partners">
-        <use href="./images/symbol-defs.svg#icon-client5"></use>
-      </svg>
-
-      <svg class="partners">
-        <use href="./images/symbol-defs.svg#icon-client6"></use>
-      </svg>
-
-      <svg class="icon-net">
-        <use href="./images/symbol-defs.svg#icon-ellipse1"></use>
-      </svg>
-
-      <svg class="icon-net">
-        <use href="./images/symbol-defs.svg#icon-ellipse2"></use>
-      </svg>
-
-      <svg class="icon-net">
-        <use href="./images/symbol-defs.svg#icon-ellipse3"></use>
-      </svg>
-
-      <svg class="icon-net">
-        <use href="./images/symbol-defs.svg#icon-ellipse4"></use>
-      </svg>
-
-
-    </button>
-  </li>
-</ul>
-*/
 
