@@ -49,9 +49,6 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;   
-
-    padding-bottom: 32px;
-    padding-top: 32px;
 }
 
 p {
@@ -70,9 +67,6 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
-  /*
-  padding-bottom: 32px;
-  padding-top: 32px;*/
 }
 
 .border {
@@ -109,6 +103,7 @@ p {
     color: var(--primary-text-color);
     fill: var(--primary-text-color);
     display: flex;
+    align-items: center;
     font-style: normal;
     Font-size: 14px;
     Line-height: 1.7;
@@ -125,11 +120,6 @@ p {
   .item-icon {
     margin-right: 10px;
   }
-
-.contact {
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
 
   /*навигация*/
   .site-nav {
@@ -315,7 +305,6 @@ p {
 
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -353,6 +342,7 @@ p {
    .section-card {
     width: 270px;
     margin-right: 30px; 
+    background-color: var(--white-color);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -365,6 +355,10 @@ p {
 
   .section-profession {
     margin-bottom: 30px;
+  }
+
+  .section-card-name {
+    padding: 30px 32px;
   }
 
 /*Футер*/
@@ -421,12 +415,12 @@ p {
    }
 
    .logo-social {
-    display: flex;
-    align-items: center;
+    margin-right: 70px;
   }
   
   .logo.footer {
-    margin-right: 131px;
+    display: inline-block;
+    margin-right: 0;
     margin-bottom: 20px;
     padding-top: 0;
     padding-bottom: 0;
@@ -461,16 +455,27 @@ p {
     height: 44px;
     border-radius: 50%;
   
-    margin-right: 10px;
-    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
   } 
-  
-  .net-card:last-child {
-    margin-right: 0;
+
+  .contact-list {
+    margin-right: 10px;
   }
   
+  .contact-list:last-child {
+    margin-right: 0;
+  }
+
+  .net-card-link {
+    fill: #afb1b8;
+  }
+
+  .net-card:hover .net-card-link,
+  .net-card:focus .net-card-link {
+    fill: var(--white-color);
+  }
+
   .net-card:hover,
   .net-card:focus {
     background-color: var(--accent-color);
@@ -478,16 +483,12 @@ p {
   
   .advantages-title.social {
     color: var(--white-color);
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   
-  .net-card-link {
-    fill: #afb1b8;
-  }
-  
-  .net-card-link:hover,
-  .net-card-link:focus {
-    fill: var(--white-color);
+  .footer-container {
+    display: flex;
+    align-items: baseline;
   }
 
   /* Кнопки выбора в портфолио */
@@ -564,15 +565,7 @@ p {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-
-    border-width: 0px 1px 1px 1px;
-    border-style: solid;
-    border-color: var(--border-portfolio);
    }
-   
-   .portfolio-card:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
 
    .portfolio-card:nth-child(3n) {
      margin-right: 0;
@@ -591,11 +584,20 @@ p {
      text-decoration: none;
   }
 
+  .name-portfolio-type {
+    padding: 20px 24px;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: var(--border-portfolio);
+  }
+
+  .portfolio-name:hover .name-portfolio-type {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
   .name {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -606,16 +608,18 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
   }
 
  .photo {
   display: block;
  }
+
+ /*Постояные клиенты*/
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
  .partners {
   display: flex;
@@ -628,11 +632,20 @@ p {
   border-radius: 4px;
 
   margin-right: 30px; 
-  margin-bottom: 94px;
 }
 
 .partners-card:last-child {
   margin-right: 0;
+}
+
+.partners-card-icon {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .partners-card:hover,
@@ -640,20 +653,7 @@ p {
   border-color: var(--accent-color);
 }
 
-.partners-card-icon {
-  display: flex;
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  justify-content: center;
-  align-items: center;
-}
-
-.partners-card-icon:hover,
-.partners-card-icon:focus {
+.partners-card:hover .partners-card-icon,
+.partners-card:focus .partners-card-icon {
   fill: var(--accent-color);
 }

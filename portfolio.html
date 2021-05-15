@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -26,12 +26,12 @@
 
         <ul class="social-contact">
             <li class="item"><a class="contact" href="">
-              <svg class="item-icon" width="20px" height="20px">
+              <svg class="item-icon" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a></li>
             <li class="item"><a class="contact" href="">
-              <svg class="item-icon" width="20px" height="20px">
+              <svg class="item-icon" width="10px" height="16px">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg>
               +38 096 111 11 11</a></li>
@@ -64,64 +64,82 @@
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(4).jpg" alt="Веб-сат Технокряк" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Технокряк</h2>
                     <p class="portfolio-type">Веб-сайт</p> 
+                    </div>
                   </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">  
                     <img class="photo" src="./images/img(5).jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Постер New Orlean vs Golden Star</h2>
                     <p class="portfolio-type">Дизайн</p> 
+                    </div>
                   </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(6).jpg" alt="Приложение Ресторан Seafood" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Ресторан Seafood</h2>
-                    <p class="portfolio-type">Приложение</p> 
+                    <p class="portfolio-type">Приложение</p>
+                  </div> 
                  </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(7).jpg" alt="Проект Prime" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Проект Prime</h2>
-                    <p class="portfolio-type">Маркетинг</p> 
+                    <p class="portfolio-type">Маркетинг</p>
+                  </div> 
                  </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(8).jpg" alt="Приложение проект Boxes" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Проект Boxes</h2>
                     <p class="portfolio-type">Приложение</p> 
+                  </div>
                   </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(9).jpg" alt="Веб-сайт Inspiration has no Borders" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Inspiration has no Borders</h2>
                     <p class="portfolio-type">Веб-сайт</p> 
+                  </div>
                  </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(10).jpg" alt="Издание Limited Edition" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Издание Limited Edition</h2>
                     <p class="portfolio-type">Дизайн</p> 
+                  </div>
                  </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(11).jpg" alt="Проект LAB" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Проект LAB</h2>
                     <p class="portfolio-type">Маркетинг</p> 
+                  </div>
                   </a>
                 </li>
                 <li class="portfolio-card">
                   <a class="portfolio-name" href="">
                     <img class="photo" src="./images/img(12).jpg" alt="Growing Business" width="370" />
+                    <div class="name-portfolio-type">
                     <h2 class="name">Growing Business</h2>
                     <p class="portfolio-type">Приложение</p> 
+                  </div>
                   </a>
                 </li>
             </ul>
@@ -131,44 +149,52 @@
     </main>
 
     <footer class="basement">
-      <div class="container">
+      <div class="container footer-container">
         <div class="logo-social">
              <a href="./index.html" class="logo footer" lang="en">
                 <span class="web">Web</span><span class="web-s">Studio</span>
              </a>
-             <h3 class="advantages-title social">присоединяйтесь</h3>
-        </div>
-        <address> 
-          <div class="logo-social">
-             <p class="coordinates">Киев, пр-т Леси Украинки, 26 </p> 
-             <div class="net"> 
+             <address> 
+                 <p class="coordinates">Киев, пр-т Леси Украинки, 26 </p> 
+                 <ul class="social-contact-f">
+                  <li class="c-f"><a class="contact-f" href="mailto:info@example.com">info@example.com</a></li>
+                  <li><a class="contact-f" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>      
+       </div>    
+       <div>   
+        <p class="advantages-title social">присоединяйтесь</p>     
+          <ul class="net"> 
+            <li class="contact-list">
                  <a class="net-card foot" href="">
                    <svg class="card-foot" width="20px" height="20px">
                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
                    </svg>
                  </a>
+            </li>
+            <li class="contact-list">     
                   <a class="net-card foot" href="">
                     <svg class="card-foot" width="20px" height="20px">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
+           </li>
+            <li class="contact-list">      
                   <a class="net-card foot" href="">
                      <svg class="card-foot" width="20px" height="20px">
                          <use href="./images/symbol-defs.svg#icon-facebook"></use>
                      </svg>
                   </a>
+            </li>
+            <li class="contact-list">      
                   <a class="net-card foot" href="">
                      <svg class="card-foot" width="20px" height="20px">
                          <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                      </svg>
                   </a>
-               </div>
-          </div>
-           <ul class="social-contact-f">
-              <li class="c-f"><a class="contact-f" href="mailto:info@example.com">info@example.com</a></li>
-              <li><a class="contact-f" href="tel:+380991111111">+38 099 111 11 11</a></li>
-           </ul>
-       </address> 
+            </li>
+          </ul>
+        </div>
       </div> 
     </footer>
     
