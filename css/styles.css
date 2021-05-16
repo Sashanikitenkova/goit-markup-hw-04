@@ -73,7 +73,7 @@ p {
   border-width: 0px 0px 1px 0px;
   border-style: solid;
   border-color: var(--border-color);
-  max-width: 1600px;
+  /*max-width: 1600px;*/
 
   margin-left: auto;
   margin-right: auto;
@@ -301,7 +301,7 @@ p {
 
   .team {
     background-color: var(--button-color);
-    max-width: 1600px;
+    /*max-width: 1600px;*/
 
     margin-left: auto;
     margin-right: auto;
@@ -335,7 +335,7 @@ p {
     font-size: 16px;
     line-height: 1.9;
 
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
    }
    
@@ -354,7 +354,7 @@ p {
   }
 
   .section-profession {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .section-card-name {
@@ -365,7 +365,7 @@ p {
 
    .basement {
     background-color: var(--background-color);
-    max-width: 1600px;
+    /*max-width: 1600px;*/
 
     padding-bottom: 60px;
     padding-top: 60px;
@@ -382,7 +382,6 @@ p {
     color: var(--white-color);
 
     margin-bottom: 9px;
-    margin-right: 70px;
    }
 
    .social-contact-f .contact-f {
@@ -591,7 +590,8 @@ p {
     border-color: var(--border-portfolio);
   }
 
-  .portfolio-name:hover .name-portfolio-type {
+  .portfolio-name:hover .name-portfolio-type,
+  .portfolio-name:focus .name-portfolio-type {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
@@ -653,7 +653,7 @@ p {
   border-color: var(--accent-color);
 }
 
-.partners-card:hover .partners-card-icon,
-.partners-card:focus .partners-card-icon {
+.partners-card-icon:hover .partners-icon, 
+.partners-card-icon:focus .partners-icon {
   fill: var(--accent-color);
 }
